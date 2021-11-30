@@ -28,4 +28,12 @@ const CardioSchema = new Schema({
 
   },
 
-})
+  workoutCreated: {
+    type: Date,
+    default: Date.now
+  }
+});
+
+const Cardio = mongoose.model("Cardio", CardioSchema);
+
+module.exports = Cardio;
