@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
-const User = require("./userModel.js");
+const Exercise = require("./models/Exercise.js");
 const app = express();
 
 app.use(logger("dev"));
@@ -13,12 +13,21 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/secure-depths-75929",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
 app.post("/exercise", ({ body }, res) => {
-  User.create(body)
-    .then(dbUser => {
-      res.json(dbUser);
+  Exercise.create(body)
+    .then(Exercise => {
+      res.json(Exercise);
     })
     .catch(err => {
       res.json(err);
