@@ -12,11 +12,10 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
 
-app.post("/submit", ({ body }, res) => {
+app.post("/exercise", ({ body }, res) => {
   User.create(body)
     .then(dbUser => {
       res.json(dbUser);
