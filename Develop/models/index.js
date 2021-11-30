@@ -1,5 +1,5 @@
 const Exercise = require('./Exercise.js');
-const Cardio = require('./Workout.js');
+const Workout = require('./Workout.js');
 
 Workout.hasMany(Exercise, {
   foreignKey: 'user_id',
