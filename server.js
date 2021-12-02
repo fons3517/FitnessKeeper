@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/FitnessData",
+  "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
