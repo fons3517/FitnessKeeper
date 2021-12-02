@@ -20,7 +20,8 @@ Alfonso Robles
 
 #### Installation
 
--[Npm express] -[Nmp path]
+- [Npm express]
+- [Nmp path]
 
 #### Media
 
