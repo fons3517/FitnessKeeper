@@ -8,11 +8,11 @@ FITNESS_KEEPER is a workout application that creates and tracks daily workouts. 
 
 ### Table of Contents
 
-_[Project_Title](#project_title)
-_[Desciption](#description)
-_[Contributors](#contributors)
-_[Installation](#installation)
-\_[Media](#media)
+- [Project_Title](#project_title)
+- [Desciption](#description)
+- [Contributors](#contributors)
+- [Installation](#installation)
+- [Media](#media)
 
 ### Contributors
 
