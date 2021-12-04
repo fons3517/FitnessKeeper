@@ -35,3 +35,4 @@ Alfonso Robles
 ![FitnessKeeperHomePage](./images/FitnessKeeperHomePage.jpg)
 ![FitnessKeeperAddExercise](./images/FitnessKeeperAddExercise.jpg)
 ![LastWorkout](./images/LastWorkout.jpg)
+![Dashboard](./images/Dashboard.jpg)
